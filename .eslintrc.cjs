@@ -11,7 +11,7 @@ module.exports = {
   plugins: ["react-refresh"],
   rules: {
     "react-refresh/only-export-components": "warn",
-    // 'eslint-disable no-unused-vars': 'warn',
-    "no-unused-vars": ["error", { varsIgnorePattern: "^SwitchToggle$" }],
+    'eslint-disable no-unused-vars': 'false',
+    // "no-unused-vars": ["error", { varsIgnorePattern: "^SwitchToggle$" }],
   },
 };

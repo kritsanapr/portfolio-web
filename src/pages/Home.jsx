@@ -1,4 +1,4 @@
-import { HeaderMenu } from "../components/HeaderMenu";
+import MainLayout from "../layouts/MainLayout";
 
 const links = [
   {
@@ -18,8 +18,9 @@ const links = [
 export default function Home() {
   return (
     <>
-    <HeaderMenu link={links} />
-      <h1>Home</h1>
+      <MainLayout>
+        <h1>Home</h1>
+      </MainLayout>
     </>
   );
 }

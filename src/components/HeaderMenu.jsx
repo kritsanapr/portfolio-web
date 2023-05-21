@@ -1,7 +1,6 @@
 import { createStyles, Header, Menu, Group, Center, Burger, Container, rem } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { IconChevronDown } from '@tabler/icons-react';
-
 import { SwitchToggle } from './SwitchToggle';
 
 const useStyles = createStyles((theme) => ({
@@ -45,7 +44,7 @@ const useStyles = createStyles((theme) => ({
 }));
 
 
-export function HeaderMenu({ links }) {
+export default function HeaderMenu({ links }) {
   const [opened, { toggle }] = useDisclosure(false);
   const { classes } = useStyles();
 
